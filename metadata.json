@@ -1,0 +1,7 @@
+{
+  "name": "Mirova ai",
+  "description": "A live talking AI assistant developed by G. Vikas with a robotic personality.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
