@@ -27,7 +27,6 @@ export function convertFloat32ToInt16(float32Array: Float32Array): Int16Array {
   const l = float32Array.length;
   const int16Array = new Int16Array(l);
   for (let i = 0; i < l; i++) {
-    // Clamp values to [-1, 1] before scaling
     const s = Math.max(-1, Math.min(1, float32Array[i]));
     int16Array[i] = s < 0 ? s * 0x8000 : s * 0x7FFF;
   }
